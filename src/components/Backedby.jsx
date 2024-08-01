@@ -2,7 +2,7 @@ import Image from "next/image";
 import AI from "/public/aigrant.jpeg";
 import FellowFunds from "/public/fellows.png";
 import GET from "/public/GFT.png";
-import Lombardstreet from "/public/Lombardstreet.png";
+import Lombardstreet from "/public/lombardstreet.png";
 import Ninja from "/public/ninja.png";
 import Pioneer from "/public/pioneer.png";
 import y from "/public/ycomobinator.png";

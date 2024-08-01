@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Discord from "/public/Social/Discord.png";
+import Discord from "/public/Social/discord.png";
 import FB from "/public/Social/fb.png";
 import Feedback from "/public/Social/feedback.png";
 import Git from "/public/Social/github.png";

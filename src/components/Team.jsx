@@ -51,7 +51,11 @@ const Team = () => {
             key={team.name}
             className="mb-8 w-[323px]  rounded-lg border-2  gap-5 flex flex-col px-4 py-2 relative"
           >
-            <Image src={team.image} className="h-[300px] flex gap-10 " />
+            <Image
+              src={team.image}
+              className="h-[300px] flex gap-10 "
+              alt={team.name}
+            />
             <h2 className="text-[20px] font-bold">{team.name}</h2>
             <h3 className="h-[200px]">{team.descripion}</h3>
             <Link href={team.linkedin} className="w-[30px] my-10 flex  gap-5">
