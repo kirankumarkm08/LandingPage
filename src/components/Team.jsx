@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Linkedin from "/public/Linked.png";
+import Linkedin from "/public/Social/linkedin.png";
 import Benjamin from "/public/Teams/Benjaminbolte.jpeg";
 import Matt from "/public/Teams/MattFreed.jpeg";
 import Pawel from "/public/Teams/Pawel.jpeg";
@@ -39,31 +39,33 @@ const Team = () => {
     },
   ];
   return (
-    <div className="w-full mx-auto gap-5 min-h-screen  " id="teams">
-      <div className="h-[150px]"></div>
-      <div className="font-bold text-[30px] ">Teams</div>
-      <div
-        id="teams"
-        className=" gap-10 flex overflow-auto  w-full " //grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
-      >
-        {teams.map((team) => (
-          <div
-            key={team.name}
-            className="mb-8 w-[323px]  rounded-lg border-2  gap-5 flex flex-col px-4 py-2 relative"
-          >
-            <Image
-              src={team.image}
-              className="h-[300px] flex gap-10 "
-              alt={team.name}
-            />
-            <h2 className="text-[20px] font-bold">{team.name}</h2>
-            <h3 className="h-[200px]">{team.descripion}</h3>
-            <Link href={team.linkedin} className="w-[30px] my-10 flex  gap-5">
-              <Image src={Linkedin} alt="linkedin" />
-            </Link>
-          </div>
-        ))}
+    <div className=" gap-10 flex flex-col  " id="teams">
+      <h1 className="font-bold text-[30px] mx-10">Teams</h1>
+      <div className=" w-[1280px] mx-auto">
+        <div
+          id="teams"
+          className=" gap-10 flex overflow-auto  w-full  " //grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
+        >
+          {teams.map((team) => (
+            <div
+              key={team.name}
+              className="w-full   rounded-lg border-2  border-black gap-5 flex flex-col px-4 py-2 relative"
+            >
+              <Image
+                src={team.image}
+                className="h-[300px] flex gap-5 "
+                alt={team.name}
+              />
+              <h2 className="text-[20px] font-bold">{team.name}</h2>
+              <h3 className="h-[200px]">{team.descripion}</h3>
+              <Link href={team.linkedin} className="w-[30px] mt-10 flex  gap-5">
+                <Image src={Linkedin} alt="linkedin" />
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
+      <div className="h-[150px]"></div>
     </div>
   );
 };

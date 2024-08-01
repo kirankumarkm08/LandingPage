@@ -3,11 +3,11 @@ import AboutImage from "/public/About.png";
 
 const About = () => {
   return (
-    <div className=" gap-10 flex flex-col " id="about">
+    <div className=" gap-10 flex flex-col mx-10 " id="about">
       <div className="h-[100px]"></div>
       <div className=" w-full flex flex-col gap-10 ">
         <h1 className="text-[30px] font-bold"> About Us</h1>
-        <div className="rounded-lg border-2 px-8 py-36  flex justify-between relative    ">
+        <div className="rounded-lg border-2 px-8 py-36 border-black  flex justify-between relative  bg-white   ">
           <h1 className=" max-w-[500px] ">
             K-Scale Labs is a machine learning startup building software for the
             next generation of embodied artificial intelligence. Located near

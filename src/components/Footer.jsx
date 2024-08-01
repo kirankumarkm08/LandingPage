@@ -56,11 +56,11 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="">
-      <div className="  bg-transparent  py-10 px-20 flex  justify-between  mx-40 ">
+    <div className="w-full bg-gradient-to-r from-indigo-500 via-purple-500   ">
+      <div className="    py-10 px-20 flex  justify-between  mx-40 ">
         <div className="">
           <h1 className="font-bold w-[100px]">Follow us</h1>
-          <div className=" gap-10 md:flex  my-10     ">
+          <div className=" gap-10 md:flex  mt-10     ">
             {SocialLinks.map((links) => (
               <div className=" hover:underline " key={links.name}>
                 <Link href={links.link}>
@@ -77,17 +77,17 @@ const Footer = () => {
 
         <div className="">
           <h1 className="font-bold">Learn More about Us</h1>
-          <div className="gap-10 lg:flex my-10  flex  ">
+          <div className="gap-10 lg:flex mt-10  h-[30px] flex items-center justify-center  ">
             {about.map((items) => (
               <div
                 key={items.name}
-                className="hover:ease-in-out flex items-center  "
+                className="hover:ease-in-out flex items-center justify-center  "
               >
                 <Link href={items.link}>
                   <Image
                     src={items.icon}
                     alt={items.name}
-                    className="w-[30px] hover:scale-50"
+                    className="w-[30px] h-[30px] hover:scale-50"
                   />
                 </Link>
               </div>
@@ -95,7 +95,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className=" flex justify-center my-10">
+      <div className=" flex justify-center py-5">
         <h1>@ 2024 k-scale labs All rights reserved</h1>
       </div>
     </div>

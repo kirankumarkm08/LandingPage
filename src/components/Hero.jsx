@@ -2,7 +2,7 @@ import Image from "next/image";
 import Kscale from "/public/kscalelabs.png";
 const Hero = () => {
   return (
-    <div className=" h-[600px] relative flex mx-5   ">
+    <div className=" h-[600px] w-[1280px] mx-auto relative flex   ">
       <div className=" ">
         <div className="h-[200px] mt-32 "></div>
         <h1 className="font-bold text-[40px] ">Moving humanity up</h1>
