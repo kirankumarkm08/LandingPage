@@ -42,7 +42,7 @@ const Backedby = () => {
       {/* <marquee behavior="right" direction="" className="flex w-full"> */}
       <div
         id="backedby"
-        className="flex   w-full border-2 border-black rounded-xl bg-white"
+        className="flex   w-full border-2 border-transparent shadow-2xl rounded-xl bg-white"
       >
         <div className="  grid grid-cols-4  gap-32  px-20 py-32   ">
           {backedby.map((items, index) => (

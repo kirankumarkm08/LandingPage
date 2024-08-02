@@ -45,12 +45,12 @@ const Team = () => {
       <div className=" w-[1280px] mx-auto">
         <div
           id="teams"
-          className=" gap-10 flex overflow-auto  w-[800px] mx-auto grid grid-cols-2  " //grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
+          className=" gap-10 flex   rounded-lg border-2  border-transparent shadow-2xl w-[800px] mx-auto grid grid-cols-2  " //grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
         >
           {teams.map((team) => (
             <div
               key={team.name}
-              className="  rounded-lg border-2  border-black gap-5 flex flex-col px-4 py-2 relative"
+              className="  rounded-lg border-2  border-transparent shadow-2xl gap-5 flex flex-col px-4 py-2 relative"
             >
               <Image
                 src={team.image}
