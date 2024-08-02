@@ -42,23 +42,22 @@ const Team = () => {
     <div className=" gap-10 flex flex-col  " id="teams">
       <div className="h-[100px]"></div>
       <h1 className="font-bold text-[30px] mx-10 text-white">Teams</h1>
-      <div className=" w-[1280px] mx-auto text-white">
+      <div className="w-[1280px] max-w-[1280px] mx-auto text-white gap-5">
         <div
           id="teams"
-          className=" gap-10 flex   w-[800px] mx-auto grid grid-cols-2  " //grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
+          className=" gap-5 flex   w-full mx-auto grid grid-cols-2   p-10  " //grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
         >
           {teams.map((team) => (
             <div
               key={team.name}
-              className="   gap-5 flex flex-col px-4 py-2 relative"
+              className="  w-[400px]  gap-5 flex flex-col px-4 py-2 relative  backdrop-blur-3xl rounded-3xl shadow-black shadow-2xl"
             >
               <Image
                 src={team.image}
-                className="h-[400px] w-fit flex  rounded-lg "
-                alt={team.name}
+                className=" w-[370px]   flex p-10 rounded-3xl "
               />
               <h2 className="text-[20px] font-bold">{team.name}</h2>
-              <h3 className="h-[150px]">{team.descripion}</h3>
+              <h3 className="h-[130px]">{team.descripion}</h3>
               <Link href={team.linkedin} className="w-[30px] flex  gap-5">
                 <Image src={Linkedin} alt="linkedin" cl />
               </Link>

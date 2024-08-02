@@ -6,7 +6,7 @@ const Hero = () => {
     <div className=" min-h-screen     relative flex   ">
       <div className=" mx-32">
         <div className="h-[200px] mt-32 "></div>
-        <div className="  px-5   py-10 text-white   relative ">
+        <div className="  p-20 text-white   relative backdrop-blur-md rounded-3xl shadow-black shadow-2xl ">
           <h1 className="font-bold text-[40px] ">Moving humanity up</h1>
           <h1 className="text-[30px]">the Kardashev scale</h1>
         </div>

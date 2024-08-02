@@ -3,13 +3,13 @@ import AboutImage from "/public/About.png";
 
 const About = () => {
   return (
-    <div className=" gap-10 flex flex-col  " id="about">
+    <div className=" gap-10 flex flex-col  relative " id="about">
       <div className="h-[100px]"></div>
       <div className=" w-full flex flex-col gap-10 ">
         <h1 className="text-[30px] font-bold mx-10 text-white"> About Us</h1>
-        <div className=" h-[600px] w-full bg-no-repeat  bg-fixed  bg-center    bg-hero-image ">
-          <div className=" px-8 py-36  flex justify-between relative    ">
-            <h1 className="max-w-[600px]  text-white mx-36 ">
+        <div className="  ">
+          <div className=" px-8  flex justify-end items-end ">
+            <h1 className="max-w-[600px]  text-white mx-36  backdrop-blur-lg  px-10 py-20 rounded-3xl shadow-2xl shadow-black">
               K-Scale Labs is a machine learning startup building software for
               the next generation of embodied artificial intelligence. Located
               near Stanford in the heart of Silicon Valley, we are a team of

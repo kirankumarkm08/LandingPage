@@ -36,18 +36,21 @@ const Backedby = () => {
     },
   ];
   return (
-    <div className="flex flex-col gap-10 mx-10 ">
+    <div className="flex flex-col  mx-10 ">
       <div className="h-[100px]"></div>
       <div className="font-bold text-[30px] text-white">BackedBy</div>
       {/* <marquee behavior="right" direction="" className="flex w-full"> */}
       <div id="backedby" className="flex   w-full  ">
-        <div className="  grid grid-cols-4  flex  items-center justify-center flex-wrap gap-32  px-20 py-32   ">
+        <div className="  grid grid-cols-4  flex  items-center justify-center  flex-wrap gap-10  px-20 py-10    ">
           {backedby.map((items, index) => (
-            <div key={items.name} className="">
+            <div
+              key={items.name}
+              className="backdrop-blur-3xl rounded-3xl shadow-black shadow-2xl"
+            >
               <Image
                 src={items.logo}
                 alt={items.name}
-                className="w-[400px] h-[200px] flex p-10"
+                className="w-[400px] h-[250px] flex p-10 rounded-xl "
               />
             </div>
           ))}
