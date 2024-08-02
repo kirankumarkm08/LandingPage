@@ -60,14 +60,14 @@ const Footer = () => {
       <div className="    py-10 px-20 flex  justify-between  mx-40 ">
         <div className="">
           <h1 className="font-bold w-[100px]">Follow us</h1>
-          <div className=" gap-10 md:flex  mt-10     ">
+          <div className=" gap-10 flex  flex-wrap items-center justify-evenly  mt-10     ">
             {SocialLinks.map((links) => (
               <div className=" hover:underline " key={links.name}>
                 <Link href={links.link}>
                   <Image
                     src={links.icon}
                     alt={links.name}
-                    className=" w-[30px] justify-center items-center "
+                    className=" w-[20px] justify-center items-center "
                   />
                 </Link>
               </div>
@@ -87,7 +87,7 @@ const Footer = () => {
                   <Image
                     src={items.icon}
                     alt={items.name}
-                    className="w-[30px] h-[30px] hover:scale-50"
+                    className="w-[20px]  "
                   />
                 </Link>
               </div>

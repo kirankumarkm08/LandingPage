@@ -40,25 +40,26 @@ const Team = () => {
   ];
   return (
     <div className=" gap-10 flex flex-col  " id="teams">
+      <div className="h-[100px]"></div>
       <h1 className="font-bold text-[30px] mx-10">Teams</h1>
       <div className=" w-[1280px] mx-auto">
         <div
           id="teams"
-          className=" gap-10 flex overflow-auto  w-full  " //grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
+          className=" gap-10 flex overflow-auto  w-[800px] mx-auto grid grid-cols-2  " //grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
         >
           {teams.map((team) => (
             <div
               key={team.name}
-              className="w-full   rounded-lg border-2  border-black gap-5 flex flex-col px-4 py-2 relative"
+              className="  rounded-lg border-2  border-black gap-5 flex flex-col px-4 py-2 relative"
             >
               <Image
                 src={team.image}
-                className="h-[300px] flex gap-5 "
+                className="h-[400px] w-fit flex  rounded-lg "
                 alt={team.name}
               />
               <h2 className="text-[20px] font-bold">{team.name}</h2>
-              <h3 className="h-[200px]">{team.descripion}</h3>
-              <Link href={team.linkedin} className="w-[30px] mt-10 flex  gap-5">
+              <h3 className="h-[150px]">{team.descripion}</h3>
+              <Link href={team.linkedin} className="w-[30px] flex  gap-5">
                 <Image src={Linkedin} alt="linkedin" />
               </Link>
             </div>
