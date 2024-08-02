@@ -6,7 +6,7 @@ import Team from "@/components/Team";
 
 const page = () => {
   return (
-    <div className="mx-auto bg-[#B2B5E0]   flex flex-col ">
+    <div className="  min-h-screen w-full bg-no-repeat  bg-fixed  bg-center    bg-hero-image  flex flex-col ">
       <Hero />
       <About />
       <Backedby />

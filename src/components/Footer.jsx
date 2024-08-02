@@ -56,7 +56,7 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="w-full bg-[#B2B5E0]  ">
+    <div className="w-full   ">
       <div className="    py-10 px-20 flex  justify-between  mx-40 ">
         <div className="">
           <h1 className="font-bold w-[100px]">Follow us</h1>

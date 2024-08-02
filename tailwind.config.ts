@@ -8,7 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {},
+      backgroundImage: {
+        "hero-image": "url('/bgImage/dark_mode_2.png')",
+      },
     },
   },
   plugins: [],

@@ -41,16 +41,16 @@ const Team = () => {
   return (
     <div className=" gap-10 flex flex-col  " id="teams">
       <div className="h-[100px]"></div>
-      <h1 className="font-bold text-[30px] mx-10">Teams</h1>
-      <div className=" w-[1280px] mx-auto">
+      <h1 className="font-bold text-[30px] mx-10 text-white">Teams</h1>
+      <div className=" w-[1280px] mx-auto text-white">
         <div
           id="teams"
-          className=" gap-10 flex   rounded-lg border-2  border-transparent shadow-2xl w-[800px] mx-auto grid grid-cols-2  " //grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
+          className=" gap-10 flex   w-[800px] mx-auto grid grid-cols-2  " //grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
         >
           {teams.map((team) => (
             <div
               key={team.name}
-              className="  rounded-lg border-2  border-transparent shadow-2xl gap-5 flex flex-col px-4 py-2 relative"
+              className="   gap-5 flex flex-col px-4 py-2 relative"
             >
               <Image
                 src={team.image}
@@ -60,7 +60,7 @@ const Team = () => {
               <h2 className="text-[20px] font-bold">{team.name}</h2>
               <h3 className="h-[150px]">{team.descripion}</h3>
               <Link href={team.linkedin} className="w-[30px] flex  gap-5">
-                <Image src={Linkedin} alt="linkedin" />
+                <Image src={Linkedin} alt="linkedin" cl />
               </Link>
             </div>
           ))}

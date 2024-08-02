@@ -27,7 +27,7 @@ const Nav = () => {
   ];
   return (
     <div className=" fixed w-full  shadow-sm  z-50  bg-transparent backdrop-blur-xl ">
-      <div className=" flex  items-center justify-between   py-6 sm:mx-32 text-black">
+      <div className=" flex  items-center justify-between   py-6 sm:mx-32 text-white">
         <Link href="/" className="">
           <div className="flex font-bold  flex-wrap   text-[40px] hover:underline">
             <h1 className="">K-scale</h1>
