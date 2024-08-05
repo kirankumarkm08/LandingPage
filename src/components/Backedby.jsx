@@ -50,7 +50,7 @@ const Backedby = () => {
               <Image
                 src={items.logo}
                 alt={items.name}
-                className="w-[400px] h-[250px] flex p-10 rounded-xl "
+                className="w-[400px] h-[150px] flex p-10 rounded-xl "
               />
             </div>
           ))}
